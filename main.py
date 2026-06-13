@@ -172,20 +172,20 @@ def tooth_profile_sim(phi):
 
 # ======================== Inventor ===========================
 # Launch Inventor
-inv = win32com.client.Dispatch("Inventor.Application")
-inv.Visible = True
+# inv = win32com.client.Dispatch("Inventor.Application")
+# inv.Visible = True
 
-# Open your file
-doc = inv.Documents.Open(
-    r"C:\Users\Mel_C\Data\Documents\Projects\Impulso\Mechanical Design\LeonardBot_Impulso_003\Trochoidal\Cremallera.ipt"
-)
+# # Open your file
+# doc = inv.Documents.Open(
+#     r"C:\Users\Mel_C\Data\Documents\Projects\Impulso\Mechanical Design\LeonardBot_Impulso_003\Trochoidal\Cremallera.ipt"
+# )
 
-params = doc.ComponentDefinition.Parameters
+# params = doc.ComponentDefinition.Parameters
 
-# Modify parameters
-params.Item("d").Value = 4.0  # cm
+# # Modify parameters
+# params.Item("d").Value = 4.0  # cm
 
-# Rebuild
-doc.Update()
+# # Rebuild
+# doc.Update()
 
-print("Updated successfully")
+# print("Updated successfully")
